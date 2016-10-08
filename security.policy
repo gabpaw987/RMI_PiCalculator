@@ -1,0 +1,7 @@
+grant {
+  permission java.net.SocketPermission  "*:1024-65535", 
+                                        "accept, connect, listen";
+  permission java.util.PropertyPermission "*", "read,write";
+  permission com.sun.rmi.rmid.ExecOptionPermission "*";
+  permission java.lang.RuntimePermission "*";
+};
